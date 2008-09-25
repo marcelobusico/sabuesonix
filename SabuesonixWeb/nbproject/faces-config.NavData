@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only">
+        <Node id="index.jsp" x="154" y="194" zoom="true"/>
+        <Node id="login.jsp" x="400" y="300" zoom="true"/>
+        <Node id="*" x="308" y="45" zoom="true"/>
+        <Node id="management.jsp" x="650" y="150" zoom="true"/>
+        <Node id="searchResult.jsp" x="133" y="343" zoom="true"/>
+    </Scope>
+    <Scope Scope="Project">
+        <Node id="index.jsp" x="163" y="154" zoom="false"/>
+        <Node id="about.jsp" x="617" y="220" zoom="true"/>
+        <Node id="*" x="180" y="16" zoom="true"/>
+        <Node id="login.jsp" x="253" y="364" zoom="true"/>
+        <Node id="management.jsp" x="457" y="326" zoom="true"/>
+        <Node id="searchResult.jsp" x="431" y="90" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations">
+        <Node id="index.jsp" x="163" y="154" zoom="true"/>
+        <Node id="login.jsp" x="253" y="364" zoom="true"/>
+        <Node id="*" x="180" y="16" zoom="true"/>
+        <Node id="management.jsp" x="406" y="230" zoom="true"/>
+        <Node id="searchResult.jsp" x="11" y="313" zoom="true"/>
+    </Scope>
+</Scene>

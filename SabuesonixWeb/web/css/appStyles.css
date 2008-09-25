@@ -1,0 +1,34 @@
+
+html {
+    overflow: scroll;
+}
+
+.oddRow{
+    background-color: #F1F1F1;
+}
+.evenRow{
+    background-color: #FFFFFF;
+}
+
+.loginConteiner{
+    font-size: 12px;    
+    font-family: arial;    
+    height: 15px;
+    width: 100%;
+}
+.columnMsgs{
+    width: 70%;
+    text-align: left;
+}
+.columnLogin{
+    width: 30%;
+    text-align: right;
+}
+.columnPaths{
+    width: 80%;
+    text-align: center;
+}
+.columnOptions{
+    width: 20%;
+    text-align: center;
+}

@@ -1,4 +1,4 @@
-#summary Instructions for installation of SabuesonixApp and DB Schema
+#summary Installation guide for SabuesonixApp and DB Schema
 #labels installation,Phase-Deploy,guide
 
 -------------------------------------

@@ -22,6 +22,7 @@
 package sabuesonix.entities.persistence;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
@@ -64,6 +65,16 @@ public class PoolManager {
         }
     }
 
+    private void tryDirectConnection() throws Exception {
+        try {
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
+            sqlConnection = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/sabuesonix", "sabuesonix", "123456");
+        } catch (Exception ex) {
+            throw new Exception("Resource not found.", ex);
+        }
+    }
+
     /**
      * Returns the DB connection.
      */
@@ -76,8 +87,12 @@ public class PoolManager {
      */
     public void connect() throws Exception {
         if (sqlConnection == null) {
-            setContext();
-            sqlConnection = ds.getConnection();
+            try {
+                setContext();
+                sqlConnection = ds.getConnection();
+            } catch (Exception ex) {
+                tryDirectConnection();
+            }
         }
     }
 

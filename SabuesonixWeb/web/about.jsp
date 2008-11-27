@@ -51,12 +51,12 @@
                     <f:facet name="header">
                         <h:outputText value="#{msgs.team}"></h:outputText>
                     </f:facet>
-                    <h:outputText value="Zilocchi Emiliano"></h:outputText>
-                    <h:outputText value="47947"></h:outputText>
-                    <h:outputText value="Busico Marcelo"></h:outputText>
-                    <h:outputText value="49145"></h:outputText>
-                    <h:outputText value="Funes Franco"></h:outputText>                    
-                    <h:outputText value="47750"></h:outputText>                    
+                    <h:outputText value="Busico, Marcelo"></h:outputText>
+                    <h:outputText value="marcelobusico@gmail.com"></h:outputText>
+                    <h:outputText value="Funes, Franco"></h:outputText>
+                    <h:outputText value="funesfranco@gmail.com"></h:outputText>
+                    <h:outputText value="Zilocchi, Emiliano"></h:outputText>
+                    <h:outputText value="ezilocchi@gmail.com"></h:outputText>
                 </h:panelGrid>
             </rich:panel>
         </f:view>        

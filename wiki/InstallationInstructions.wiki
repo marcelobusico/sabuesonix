@@ -1,6 +1,96 @@
-#summary Instructions for installation of Sabuesonix EJB, Web and DB Schema
+#summary Instructions for installation of SabuesonixApp and DB Schema
 #labels installation,Phase-Deploy,guide
 
-= Installation Instructions =
+-------------------------------------
+Sabuesonix - Quick installation guide
+-------------------------------------
 
-Coming Soon...
+Oficial Websites
+----------------
+
+* http://www.sabuesonix.com.ar/
+
+* http://code.google.com/p/sabuesonix/
+
+* http://www.sf.net/projects/sabuesonix/
+
+License
+-------
+
+Copyright (C) 2008 Busico, Funes, Zilocchi
+
+Authors:
+  Busico, Marcelo (marcelobusico@gmail.com)
+  Funes, Franco (funesfranco@gmail.com)
+  Zilocchi, Emiliano (ezilocchi@gmail.com)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+Notes
+-----
+
+This searcher works both in Microsoft(TM) Windows(TM) as in GNU/Linux, although it has only tested in the last operating system.
+
+
+Requirements
+------------
+
+1. MySQL Server v5.0 installed and running.
+2. Glassfish v2 UR2 installed and running.
+
+
+Installation
+------------
+
+1. Download the following files
+
+  * sabuesonix-db.sql
+  * SabuesonixApp.ear
+
+2. Open MySQL Administrator, connect to localhost as root user, create the user "sabuesonix", password "123456".
+
+3. Open MySQL Query Browser, connect to localhost as root user, open in a new script tab the file "sabuesonix-db.sql" from the download folder. Then execute this script.
+
+4. Open your web browser, and connect to the administration glassfish page from
+
+  http://localhost:4848/
+  
+  Default user: admin
+  Default password: adminadmin
+  
+  * In the left menu, click in "Enterprise Applications".
+  * Click in "Deploy..."
+  * Click in "Browse..." and select the downloaded file "SabuesonixApp.ear".
+  * Click in "OK".
+  
+5. Installation finished. For test it if works, enter in your browser the following address
+
+  http://localhost:8080/SabuesonixWeb
+  
+Si todo salió bien debería ver la página principal del buscador. Solo faltará configurar las rutas donde el indexador buscará los documentos y los revisará uno por uno (esto es un proceso lento), e iniciar el indexador al finalizar la configuración.
+
+If all it's OK, you'll see the browser main page. Only you need now is configure the paths where the indexer will search the documents and it will review each document (this may take a long time), and you'll must start the indexer after finish the configuration.
+
+For sabuesonix administration use
+
+  User: admin
+
+  Password: admin
+  
+Then they have already indexed documents you can try search from the main page.
+
+Enjoy it!
+
+Sabuesonix Team.
